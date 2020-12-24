@@ -5,6 +5,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '1st January',
         time: '6.00 PM - 9.00 PM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '2',
@@ -12,6 +13,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '3',
@@ -19,6 +21,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '4',
@@ -26,6 +29,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '5',
@@ -33,6 +37,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '6',
@@ -40,6 +45,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '7',
@@ -47,6 +53,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '8',
@@ -54,6 +61,7 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
     {
         id: '9',
@@ -61,5 +69,6 @@ export const movies = [
         img: 'https://i.ibb.co/pK3dk35/1574342410052-goendajuniorjumbotronresized-16x9-Images.jpg',
         date: '2nd January',
         time: '9.00 PM - 12.00 AM',
+        sits: [true, true, true, false, true, false, true, false, true, false, true, false, true, true, true, true, true, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, false, true, true, false, true, true, true]
     },
 ];

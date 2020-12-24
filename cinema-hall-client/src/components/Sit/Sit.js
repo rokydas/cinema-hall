@@ -2,9 +2,9 @@ import React from 'react';
 import './Sit.css';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 
-const Sit = () => {
+const Sit = ({available}) => {
     return (
-        <div className="sit">
+        <div className={`${available ? "available-sit" : "unavailable-sit"}`}>
             <div className="col-1">
                 <SupervisorAccountIcon />
             </div>
