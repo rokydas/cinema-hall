@@ -11,7 +11,7 @@ require('dotenv').config()
 
 const user = process.env.USER;
 const password = process.env.PASSWORD
-const db = process.env.DB;
+const db = process.env.DB_NAME;
 
 const MongoClient = require('mongodb').MongoClient;
 const { ObjectId } = require('mongodb');
