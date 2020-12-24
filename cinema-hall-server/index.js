@@ -49,7 +49,27 @@ client.connect(err => {
                 const { name, img, date, time, sits } = movie;
 
                 movies.updateOne({ _id: ObjectId(id) }, {
-                        $set: {name: name, img: img, date: date, time: time, sits: sits}
+                        $set: { name: name, img: img, date: date, time: time, sits: sits }
+                })
+                        .then(result => {
+                                res.send(result.modifiedCount > 0);
+                        })
+                        .catch(err => console.log(err));
+
+        });
+
+        app.post('/makeAllAvailable', (req, res) => {
+                const movie = req.body.selectedMovie;
+                const id = req.body.id;
+
+                // console.log(movie, id);
+
+                const { name, img, date, time } = movie;
+                const sits = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
+                console.log(sits.length);
+
+                movies.updateOne({ _id: ObjectId(id) }, {
+                        $set: { name: name, img: img, date: date, time: time, sits: sits }
                 })
                         .then(result => {
                                 res.send(result.modifiedCount > 0);
