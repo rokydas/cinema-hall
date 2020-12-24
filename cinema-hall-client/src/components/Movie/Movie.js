@@ -1,6 +1,7 @@
 import React from 'react';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import TimerIcon from '@material-ui/icons/Timer';
+import { Link } from 'react-router-dom';
 
 const Movie = ({ movie }) => {
     return (
@@ -10,7 +11,7 @@ const Movie = ({ movie }) => {
                 <h3>{movie.name}</h3>
                 <DateRangeIcon /> {movie.date} <br/>
                 <TimerIcon /> {movie.time} <br />
-                <button className="custom-btn">Book a sit</button>
+                <Link to={`/booking/${movie.id}`}><button className="custom-btn">Book a sit</button></Link>
             </div>
         </div>
     );
