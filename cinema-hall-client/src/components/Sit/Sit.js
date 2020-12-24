@@ -11,8 +11,8 @@ const Sit = ({ available, index, movie, counter, setCounter }) => {
 
     const changeAvailability = () => {
 
-        if (counter >= 5) {
-            alert("You can't buy more than 5 tickets.");
+        if (counter >= 10) {
+            alert("You can't buy more than 10 tickets.");
         }
         else {
             setIsAvailable(false);

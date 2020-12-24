@@ -27,7 +27,7 @@ const Booking = () => {
     const { name, img, date, time, sits } = selectedMovie;
 
     const makeAllAvailable = () => {
-        fetch('http://localhost:5000/makeAllAvailable', {
+        fetch('https://cinema-hall-server.herokuapp.com/makeAllAvailable', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ const Booking = () => {
 
                     {availableSit.length == 0 &&
                         <div>
-                            <h3 className="text-danger">House are full</h3>
+                            <h3 className="text-danger">House is full</h3>
                             <button onClick={makeAllAvailable} className="custom-btn">Make all sits available</button>
                         </div>
                     }
