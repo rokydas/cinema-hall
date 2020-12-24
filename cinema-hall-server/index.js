@@ -40,6 +40,24 @@ client.connect(err => {
         //                 })
         // })
 
+        app.post('/update', (req, res) => {
+                const movie = req.body.movie;
+                const id = req.body.id;
+
+                // console.log(movie, id);
+
+                const { name, img, date, time, sits } = movie;
+
+                movies.updateOne({ _id: ObjectId(id) }, {
+                        $set: {name: name, img: img, date: date, time: time, sits: sits}
+                })
+                        .then(result => {
+                                res.send(result.modifiedCount > 0);
+                        })
+                        .catch(err => console.log(err));
+
+        });
+
 });
 
 

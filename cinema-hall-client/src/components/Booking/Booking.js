@@ -10,7 +10,7 @@ const Booking = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/movies')
+        fetch('https://cinema-hall-server.herokuapp.com/movies')
             .then(res => res.json())
             .then(data => setMovies(data));
     }, [])
@@ -23,7 +23,6 @@ const Booking = () => {
         selectedMovie = movies.find(movie => JSON.stringify(movie._id) === JSON.stringify(id));
     }
     
-
     const { name, img, date, time, sits } = selectedMovie;
 
     return (
@@ -37,7 +36,7 @@ const Booking = () => {
                     <div className="sit-container">
                         <div className="row">
                             {
-                                sits.map(sit => <Sit available={sit} />)
+                                sits.map((sit, index) => <Sit movie={selectedMovie} key={index} index={index} available={sit} />)
                             }
                         </div>
                     </div>

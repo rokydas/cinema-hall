@@ -7,7 +7,7 @@ const Home = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/movies')
+        fetch('https://cinema-hall-server.herokuapp.com/movies')
             .then(res => res.json())
             .then(data => setMovies(data));
     }, [])

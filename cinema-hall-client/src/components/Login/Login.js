@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import './Login.css';
 import firebase from "firebase/app";
@@ -20,16 +20,6 @@ const Login = () => {
     const [isNewUser, setIsNewUser] = useState(true);
     const [user, setUser] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
-    const [admin, setAdmin] = useState([]);
-
-    useEffect(() => {
-        fetch('https://subject-list.herokuapp.com/admin')
-            .then(res => res.json())
-            .then(data => {
-                setAdmin(data);
-                console.log(admin);
-            });
-    }, [])
 
     let { from } = location.state || { from: { pathname: "/" } };
 
@@ -40,16 +30,8 @@ const Login = () => {
     }
 
     const successLogin = (name, email) => {
-        let isAdmin = false;
-        for (let i = 0; i < admin.length; i++) {
-            const element = admin[i];
-            if(element.email === email) {
-                isAdmin = true;
-                break;
-            }
-        }
         localStorage.setItem('userName', name);
-        localStorage.setItem('isAdmin', isAdmin);
+        // localStorage.setItem('isAdmin', isAdmin);
         history.replace(from);
         history.go(0);
     }
